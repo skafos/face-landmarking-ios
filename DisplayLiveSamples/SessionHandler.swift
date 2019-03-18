@@ -57,7 +57,10 @@ class SessionHandler : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, A
         // before it is added, availableMetadataObjectTypes is empty
         metaOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.face]
         
-        wrapper?.prepare()
+        // NSString *modelFileName = [[NSBundle mainBundle] pathForResource:@"shape_predictor_5_face_landmarks" ofType:@"dat"];
+        let modelFileName = Bundle.main.path(forResource: "shape_predictor_68_face_landmarks", ofType: "dat")
+        debugPrint("Initial model filepath = \(modelFileName)")
+        wrapper?.prepare(modelFileName)
         
         session.startRunning()
     }

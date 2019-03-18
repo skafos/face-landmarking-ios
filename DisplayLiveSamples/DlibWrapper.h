@@ -13,6 +13,6 @@
 
 - (instancetype)init;
 - (void)doWorkOnSampleBuffer:(CMSampleBufferRef)sampleBuffer inRects:(NSArray<NSValue *> *)rects;
-- (void)prepare;
+- (void)prepare: (NSString *) path;
 
 @end

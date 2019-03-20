@@ -32,9 +32,10 @@
     return self;
 }
 
-- (void)prepare {
-    NSString *modelFileName = [[NSBundle mainBundle] pathForResource:@"shape_predictor_68_face_landmarks" ofType:@"dat"];
-    std::string modelFileNameCString = [modelFileName UTF8String];
+- (void)prepare: (NSString *) path {
+    
+    // NSString *modelFileName = [[NSBundle mainBundle] pathForResource:@"shape_predictor_5_face_landmarks" ofType:@"dat"];
+    std::string modelFileNameCString = [path UTF8String];
     
     dlib::deserialize(modelFileNameCString) >> sp;
     
@@ -45,7 +46,8 @@
 - (void)doWorkOnSampleBuffer:(CMSampleBufferRef)sampleBuffer inRects:(NSArray<NSValue *> *)rects {
     
     if (!self.prepared) {
-        [self prepare];
+        NSString *modelFileName = [[NSBundle mainBundle] pathForResource:@"shape_predictor_5_face_landmarks" ofType:@"dat"];
+        [self prepare: modelFileName];
     }
     
     dlib::array2d<dlib::bgr_pixel> img;

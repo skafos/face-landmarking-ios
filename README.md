@@ -7,6 +7,9 @@ I did not measure performance yet but there is no discernible lag anymore. It lo
 
 But I am sure there are a lot more performance improvements to be made. Currently, the buffers are copied around a lot.
 
+## Skafos Integration
+With the Skafos framework integrated, you can now push and pull new/updated models to the app over the air. The base app has a 68pt facial landmark detection model built-in. Using Skafos, you can update that to a different model seamlessly. For example, try delivering the [5pt facial landmark detection model](https://s3.amazonaws.com/skafos.example.data/FacialLandmarkDetection/shape_predictor_5_face_landmarks.dat.zip) using the Drag N' Drop feature on the [Skafos Dashboard](https://dashboard.metismachine.io). Try building your own DLib model and pushing it through the framework!
+
 ## Screenshot
 
 ![screenshot](screenshot.png)

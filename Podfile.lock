@@ -1,21 +1,16 @@
 PODS:
-  - Skafos (2.5.4)
+  - Skafos (2.5.5)
 
 DEPENDENCIES:
-  - Skafos (from `https://github.com/MetisMachine/skafos_ios_internal.git`)
+  - Skafos (~> 2.5.5)
 
-EXTERNAL SOURCES:
-  Skafos:
-    :git: https://github.com/MetisMachine/skafos_ios_internal.git
-
-CHECKOUT OPTIONS:
-  Skafos:
-    :commit: 3f1e6919031b448e82c0cca35310247f21e4f219
-    :git: https://github.com/MetisMachine/skafos_ios_internal.git
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Skafos
 
 SPEC CHECKSUMS:
-  Skafos: f2b472a209ecc80ffff5a6df8da33c9a03558a13
+  Skafos: 72dda451a7ec2592974d493fdcf068ac589f28c7
 
-PODFILE CHECKSUM: c9109f5b4271e30d0e6d084d6a7712bad2e83696
+PODFILE CHECKSUM: 1815705646c018b86364da3a848b7bb1d3cc16e4
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0

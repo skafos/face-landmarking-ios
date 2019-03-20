@@ -7,7 +7,7 @@ target 'DisplayLiveSamples' do
   
 
   # Skafos Swift SDK
-  pod 'Skafos', git: 'https://github.com/MetisMachine/skafos_ios_internal.git'
+  pod 'Skafos', '~> 2.5.5'
 
   # Pods for DisplayLiveSamples
 

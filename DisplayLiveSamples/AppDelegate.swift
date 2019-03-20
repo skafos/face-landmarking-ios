@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Skafos.initialize(
            Config(
               "YOUR PUBLISHABLE KEY",
-              swizzle: true
+              swizzle: true,
+              isDev: true
            )
          )
         return true
